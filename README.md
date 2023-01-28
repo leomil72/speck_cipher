@@ -2,7 +2,7 @@
 # SPECK64/128 BLOCK CIPHER
   
 
-- WHAT IT IS
+## What is it?
 Speck cipher is a lightweight, easy to implement, relatively fast, simple
 block cipher developed by NSA and released into the public domain in 2013.
 It's aimed to software implementations and it's been developed primary for
@@ -14,7 +14,7 @@ NSA itself. Surely, it can be optimized and improved but, as it is, it's
 a good starting point.
 https://nsacyber.github.io/simon-speck/implementations/ImplementationGuide1.1.pdf
 
-- SPECK64/128 BLOCK CIPHER
+## Speck64/128 block cipher
 The Speck64/128 is a block cipher, meaning that it works with fixed-width
 blocks of data to be encrypted/decrypted. The "64/128" in its name stands
 for the main characteristics of the algorithm: the block is 64 bits wide
@@ -27,6 +27,3 @@ ie. 32- or 64-bits), and to keep the implementation as simple as possible,
 I opted to implement the 64/128 version of the cipher that is based on
 unsigned 32-bit variables, so that I could use the signed 64-bit integer
 of Dart, keeping only the first 32 bits of its native data type.
-
-- LICENSE
-The code is released worldwide under the Gnu GPL v3.0 license
